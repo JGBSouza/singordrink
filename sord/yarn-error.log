@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /home/joao/.yarn/releases/yarn-1.22.11.cjs install
+
+PATH: 
+  /home/joao/.cabal/bin:/home/joao/.ghcup/bin:/home/joao/gems/bin:/home/joao/.rbenv/plugins/ruby-build/bin:/home/joao/.rbenv/shims:/home/joao/.rbenv/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.19.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/joao/.cache/yarn/v6/npm-log-symbols-2.2.0-5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a-integrity/node_modules/log-symbols/.yarn-metadata.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /home/joao/.yarn/releases/yarn-1.22.11.cjs:1098:57
+      at Generator.next (<anonymous>)
+      at step (/home/joao/.yarn/releases/yarn-1.22.11.cjs:310:30)
+      at /home/joao/.yarn/releases/yarn-1.22.11.cjs:321:13
+
+npm manifest: 
+  {
+    "name": "sord",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "expo": "~47.0.12",
+      "expo-status-bar": "~1.4.2",
+      "react": "18.1.0",
+      "react-native": "0.70.5"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
