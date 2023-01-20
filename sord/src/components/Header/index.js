@@ -1,16 +1,18 @@
-import React, {useState}  from 'react'
-import ReactDOM from "react-dom/client";
+import React, {useState, useEffect}  from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function Header(){
+export default function Header({props, navigation}){
 	return(
 		<View style={styles.container}>
 			<View style={styles.header}>
-				<TouchableOpacity 
+				<TouchableOpacity
+					onPress={() => navigation.navigate("HomeScreen")}
 					style={styles.button}>
 				</TouchableOpacity>
 					
-				<Text style={styles.modeText}>Mode Name</Text>
+				<Text style={styles.modeText}>{props.title}</Text>
 			</View>
 		</View>
 	);
